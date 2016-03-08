@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--设置外观为圆角，宽度5dp-->
+    <corners android:radius="5dp"/>
+
+    <solid
+        android:color="#ffffff"/>
+    <!--设置背景渐变颜色
+    <gradient
+        android:startColor="#f50303"
+        android:endColor="#ffff"
+        />
+
+    <!-设置边框，宽度和颜色-->
+    <stroke
+        android:width="1dp"
+        android:color="@android:color/black" />
+
+
+</shape>
