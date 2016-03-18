@@ -48,7 +48,9 @@ public class MainActivity extends AppCompatActivity {
         * */
 
 //        simp_ter = new SimpleAdapter(this,dateList,R.layout.datelayout,new String[] {"src","text"},new int[] {R.id.text,R.id.src});
-        simp_ter = new SimpleAdapter(this,getDateList(),R.layout.datelayout,new String[] {"src","text"},new int[] {R.id.text,R.id.src});
+
+//        form中的键名和to中的ID一定要对应起来！！！就在这里被坑了  最后两个
+        simp_ter = new SimpleAdapter(this,getDateList(),R.layout.datelayout,new String[] {"src","text"},new int[] {R.id.src,R.id.text});
         listView.setAdapter(simp_ter);
     }
 
@@ -57,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
             Map<String,Object>map = new HashMap<String, Object>();
 //            向map集合中添加键值对
             map.put("src",R.drawable.ic_launcher);
-            map.put("text","haha");
+            map.put("text","萝莉"+i);
 //            将map集合添加到list中
             dateList.add(map);
         }
