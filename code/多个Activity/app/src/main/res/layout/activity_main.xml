@@ -13,5 +13,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/but"
-        android:text="启动第二个activity"/>
+        android:text="@string/btn"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/but"
+        android:text="拨打10086"
+        android:id="@+id/but2"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/but2"
+        android:text="传递数据"
+        android:id="@+id/but3"/>
 </RelativeLayout>
