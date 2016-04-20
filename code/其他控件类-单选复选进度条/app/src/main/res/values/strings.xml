@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Kongjian</string>
+    <string name="jindu">进度++</string>
+    <string name="new_progress">启动新窗口显示</string>
+</resources>
