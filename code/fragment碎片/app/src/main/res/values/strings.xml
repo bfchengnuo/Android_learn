@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Fragment</string>
+    <string name="title_activity_my_fragment">MyFragment</string>
+    <string name="hint">输入发送的消息</string>
+</resources>
