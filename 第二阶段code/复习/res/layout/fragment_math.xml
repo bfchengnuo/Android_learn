@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+              android:orientation="vertical"
+             android:layout_height="match_parent"
+             tools:context="com.bfchengnuo.myapplication.MathFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="数字限制:"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="4"
+        android:inputType="number"
+        android:hint="只能数字"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:hint="可以是负数"/>
+
+    <Button
+        android:id="@+id/btn_math"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="正则匹配"/>
+
+    <Button
+        android:id="@+id/btn_addTB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="插入表格"/>
+    <Button
+        android:id="@+id/btn_tbStor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="排序"/>
+
+    <TableLayout
+        android:id="@+id/tl_data"
+        android:background="#000"
+        android:stretchColumns="0,1,2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:layout_margin="1dp"
+                android:background="#fff"
+                android:text="姓名"/>
+            <TextView
+                android:layout_margin="1dp"
+                android:background="#fff"
+                android:text="性别"/>
+            <TextView
+                android:layout_margin="1dp"
+                android:background="#fff"
+                android:text="年龄"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_margin="1dp"
+                android:background="#fff"
+                android:text="姓名"/>
+            <TextView
+                android:layout_margin="1dp"
+                android:background="#fff"
+                android:text="性别"/>
+            <TextView
+                android:layout_margin="1dp"
+                android:background="#fff"
+                android:text="年龄"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

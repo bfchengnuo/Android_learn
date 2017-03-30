@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+              android:orientation="vertical"
+             tools:context="com.bfchengnuo.myapplication.TimerFragment">
+
+    <TextView
+        android:id="@+id/tv_timer_show"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_blank_fragment"/>
+
+    <Spinner
+        android:id="@+id/timer_sp"
+        android:spinnerMode="dialog"
+        android:layout_width="match_parent"
+        android:entries="@array/timerTest"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开始循环"/>
+
+    <Button
+        android:id="@+id/btn_stop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="停止循环"/>
+
+    <ProgressBar
+        android:id="@+id/pb_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+        android:max="100"/>
+
+    <Button
+        android:id="@+id/btn_pb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="进度模拟"/>
+
+    <SeekBar
+        android:id="@+id/sb_yes"
+        android:max="100"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
